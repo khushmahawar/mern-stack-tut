@@ -1,313 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My First Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechWorld | Home</title>
 
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-body{
-    background:#f2f2f2;
-}
-
-/* Header */
-
-header{
-    background:#1e3a8a;
-    color:white;
-    padding:20px 80px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.logo{
-    font-size:30px;
-    font-weight:bold;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
-}
-
-nav a:hover{
-    color:yellow;
-}
-
-/* Hero Section */
-
-.hero{
-    height:450px;
-    background:linear-gradient(to right,#2563eb,#0f172a);
-    color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-}
-
-.hero h1{
-    font-size:55px;
-}
-
-.hero p{
-    font-size:20px;
-    margin:20px 0;
-    width:60%;
-}
-
-.hero button{
-    padding:15px 35px;
-    border:none;
-    border-radius:8px;
-    background:orange;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-}
-
-.hero button:hover{
-    background:darkorange;
-}
-
-/* About */
-
-.about{
-    width:80%;
-    margin:60px auto;
-    display:flex;
-    gap:30px;
-}
-
-.box{
-    background:white;
-    padding:30px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-}
-
-.box h2{
-    margin-bottom:15px;
-    color:#1e3a8a;
-}
-
-.box p{
-    line-height:28px;
-}
-
-/* Services */
-
-.services{
-    width:90%;
-    margin:auto;
-    text-align:center;
-}
-
-.services h1{
-    margin-bottom:40px;
-    color:#1e3a8a;
-}
-
-.cards{
-    display:flex;
-    justify-content:space-between;
-    gap:20px;
-}
-
-.card{
-    width:32%;
-    background:white;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.card h2{
-    margin-bottom:15px;
-    color:#2563eb;
-}
-
-.card p{
-    line-height:25px;
-}
-
-/* Contact */
-
-.contact{
-    width:70%;
-    margin:70px auto;
-    background:white;
-    padding:40px;
-    border-radius:10px;
-    box-shadow:0 0 10px rgba(0,0,0,.2);
-}
-
-.contact h1{
-    text-align:center;
-    margin-bottom:30px;
-    color:#1e3a8a;
-}
-
-input,textarea{
-    width:100%;
-    padding:12px;
-    margin:10px 0;
-    border:1px solid gray;
-    border-radius:6px;
-}
-
-textarea{
-    height:120px;
-}
-
-.contact button{
-    width:100%;
-    padding:15px;
-    background:#2563eb;
-    color:white;
-    border:none;
-    border-radius:8px;
-    font-size:18px;
-}
-
-.contact button:hover{
-    background:#1d4ed8;
-}
-
-/* Footer */
-
-footer{
-    background:#0f172a;
-    color:white;
-    text-align:center;
-    padding:25px;
-    margin-top:40px;
-}
-
-</style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
+    <!-- Header -->
 
-<div class="logo">My Website</div>
+    <header>
 
-<nav>
-<a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Services</a>
-<a href="#">Contact</a>
-</nav>
+        <div class="logo">
+            TechWorld
+        </div>
 
-</header>
+        <nav>
 
-<section class="hero">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
 
-<h1>Welcome To My Website</h1>
+        </nav>
 
-<p>
-This is my first responsive webpage made using HTML and CSS.
-I am learning web development and this is my practice project.
-</p>
+    </header>
 
-<button>Explore More</button>
 
-</section>
+    <!-- Hero Section -->
 
-<section class="about">
+    <section class="hero">
 
-<div class="box">
-<h2>About Us</h2>
-<p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit.
-Nostrum illum accusamus adipisci voluptatem expedita,
-labore recusandae quaerat sint aliquid magni.
-</p>
-</div>
+        <h1>Welcome To TechWorld</h1>
 
-<div class="box">
-<h2>Our Mission</h2>
-<p>
-We want to create beautiful and responsive websites using
-HTML, CSS and JavaScript. Learning by building projects is
-the best way to become a web developer.
-</p>
-</div>
+        <p>
+            Learn HTML and CSS by creating beautiful websites.
+            This is a simple multi-page website project.
+        </p>
 
-</section>
+        <a href="about.html" class="btn">
+            Learn More
+        </a>
 
-<section class="services">
+    </section>
 
-<h1>Our Services</h1>
 
-<div class="cards">
+    <!-- Services -->
 
-<div class="card">
-<h2>Web Design</h2>
-<p>
-Beautiful and modern website designs with attractive layouts.
-</p>
-</div>
+    <section class="services">
 
-<div class="card">
-<h2>Frontend</h2>
-<p>
-Responsive websites using HTML, CSS and JavaScript.
-</p>
-</div>
+        <h2>Our Services</h2>
 
-<div class="card">
-<h2>Backend</h2>
-<p>
-Server-side development using different backend technologies.
-</p>
-</div>
+        <div class="card-container">
 
-</div>
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>
+                    We create modern and attractive website layouts.
+                </p>
+            </div>
 
-</section>
+            <div class="card">
+                <h3>Frontend</h3>
+                <p>
+                    Responsive websites using HTML, CSS and JavaScript.
+                </p>
+            </div>
 
-<section class="contact">
+            <div class="card">
+                <h3>Backend</h3>
+                <p>
+                    Dynamic websites using backend technologies.
+                </p>
+            </div>
 
-<h1>Contact Us</h1>
+        </div>
 
-<input type="text" placeholder="Enter Your Name">
+    </section>
 
-<input type="email" placeholder="Enter Your Email">
 
-<textarea placeholder="Enter Your Message"></textarea>
+    <!-- Why Choose Us -->
 
-<button>Send Message</button>
+    <section class="why">
 
-</section>
+        <h2>Why Choose Us?</h2>
 
-<footer>
+        <div class="why-container">
 
-<h3>My First Website</h3>
+            <div class="why-box">
+                <h3>Easy Learning</h3>
+                <p>
+                    Beginner friendly examples with simple explanations.
+                </p>
+            </div>
 
-<p>Made with ❤️ using HTML & CSS</p>
+            <div class="why-box">
+                <h3>Responsive Design</h3>
+                <p>
+                    Our websites work on desktop, tablet and mobile.
+                </p>
+            </div>
 
-<p>© 2026 All Rights Reserved.</p>
+            <div class="why-box">
+                <h3>Project Based</h3>
+                <p>
+                    Learn web development by creating real projects.
+                </p>
+            </div>
 
-</footer>
+        </div>
+
+    </section>
+
+
+    <!-- Call To Action -->
+
+    <section class="cta">
+
+        <h2>Want To Know More?</h2>
+
+        <p>
+            Visit our About page to know about our mission or Contact us for any query.
+        </p>
+
+        <a href="contact.html" class="btn">
+            Contact Us
+        </a>
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>© 2026 TechWorld. All Rights Reserved.</p>
+
+        <p>
+            <a href="index.html" style="color:white;">Home</a> |
+            <a href="about.html" style="color:white;">About</a> |
+            <a href="contact.html" style="color:white;">Contact</a>
+        </p>
+
+    </footer>
 
 </body>
 </html>
